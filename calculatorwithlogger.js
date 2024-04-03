@@ -109,6 +109,7 @@ app.get("/sub", (req, res) => {
   }
   catch(error) {
     console.error(error)
+    res.status(500).json({statuscode: 500, msg: error.toString()})
   }
 })
 
@@ -128,6 +129,7 @@ app.get("/mult", (req, res) => {
   }
   catch(error) {
     console.error(error)
+    res.status(500).json({statuscode: 500, msg: error.toString()})
   }
 })
 
@@ -147,6 +149,7 @@ app.get("/div", (req, res) => {
   }
   catch(error) {
     console.error(error)
+    res.status(500).json({statuscode: 500, msg: error.toString()})
   }
 })
 
